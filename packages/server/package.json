@@ -1,7 +1,11 @@
 {
-  "name": "ai-playground",
+  "name": "server",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts"
+  },
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
@@ -10,12 +14,8 @@
   "peerDependencies": {
     "typescript": "^5"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {
-    "Express": "^3.0.1",
-    "express": "^5.2.1",
-    "init": "^0.1.2"
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
   }
 }
