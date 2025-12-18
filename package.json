@@ -1,26 +1,28 @@
 {
-  "name": "ai-playground",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "bun run index.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/express": "^5.0.6",
-    "concurrently": "^9.2.1",
-    "vite": "^7.3.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {
-    "Express": "^3.0.1",
-    "express": "^5.2.1",
-    "init": "^0.1.2"
-  }
+   "name": "ai-playground",
+   "module": "index.ts",
+   "type": "module",
+   "private": true,
+   "scripts": {
+      "dev": "bun run index.ts",
+      "format": "prettier --write ."
+   },
+   "devDependencies": {
+      "@types/bun": "latest",
+      "@types/express": "^5.0.6",
+      "concurrently": "^9.2.1",
+      "prettier": "^3.7.4",
+      "vite": "^7.3.0"
+   },
+   "peerDependencies": {
+      "typescript": "^5"
+   },
+   "workspaces": [
+      "packages/*"
+   ],
+   "dependencies": {
+      "Express": "^3.0.1",
+      "express": "^5.2.1",
+      "init": "^0.1.2"
+   }
 }

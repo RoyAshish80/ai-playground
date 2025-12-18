@@ -8,16 +8,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
-
-  res.send('Hello, World!');
-  
+   res.send('Hello, World!');
 });
 app.get('/api/hello', (req: Request, res: Response) => {
-
-  res.json({message: 'Hello, World!'});
-  
+   res.json({ message: 'Hello, World!' });
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+   console.log(`Server is running on http://localhost:${PORT}`);
 });
