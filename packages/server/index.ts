@@ -12,7 +12,7 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello, World!');
   
 });
-app.get('api/hello', (req: Request, res: Response) => {
+app.get('/api/hello', (req: Request, res: Response) => {
 
   res.json({message: 'Hello, World!'});
   
