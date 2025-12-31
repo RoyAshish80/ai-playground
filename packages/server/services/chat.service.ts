@@ -25,6 +25,9 @@ export const chatService = {
       });
 
       conversationRepository.setLastResponseId(conversationId, response.id);
-      return { id: response.id, message: response.output_text };
+      return {
+         id: response.id,
+         message: response.output_text,
+      };
    },
 };
